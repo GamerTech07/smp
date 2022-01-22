@@ -1,0 +1,9 @@
+name: 1234Pferd
+api-version: 1.18
+author: GamerTech
+version: 1.0
+main: de.pferd.Pferd
+depend:
+  - TechBase
+
+commands:
