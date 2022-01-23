@@ -1,8 +1,10 @@
-name: 1234Pferd
+name: SMP
 api-version: 1.18
-author: GamerTech
+authors:
+  - BrokenStudio
+  - GamerTech07
 version: 1.0
-main: de.pferd.Pferd
+main: dev.brokenstudio.smp.SMP
 depend:
   - TechBase
 

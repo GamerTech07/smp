@@ -1,6 +1,6 @@
-package de.pferd.listener;
+package dev.brokenstudio.smp.listener;
 
-import de.pferd.Pferd;
+import dev.brokenstudio.smp.SMP;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -19,11 +19,11 @@ public class PlayerBedEnterListener implements Listener {
                 if(event.getPlayer().isSleeping()) {
                     event.getPlayer().getWorld().setTime(1000);
 
-                    Bukkit.getOnlinePlayers().forEach(player -> player.sendMessage(Pferd.getInstance().prefix + "Guten Morgen!"));
+                    Bukkit.getOnlinePlayers().forEach(player -> player.sendMessage(SMP.PREFIX  + "Guten Morgen!"));
                 }
             }
 
-        }.runTaskLater(Pferd.getInstance(), 40);
+        }.runTaskLater(SMP.getInstance(), 40);
 
     }
 
