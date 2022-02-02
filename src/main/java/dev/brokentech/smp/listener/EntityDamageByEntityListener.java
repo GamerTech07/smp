@@ -1,6 +1,6 @@
-package dev.brokenstudio.smp.listener;
+package dev.brokentech.smp.listener;
 
-import dev.brokenstudio.smp.SMP;
+import dev.brokentech.smp.SMP;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

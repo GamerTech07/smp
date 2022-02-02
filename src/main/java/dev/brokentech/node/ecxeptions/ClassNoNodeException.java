@@ -1,4 +1,4 @@
-package dev.brokenstudio.node.ecxeptions;
+package dev.brokentech.node.ecxeptions;
 
 public class ClassNoNodeException extends Throwable {
 }

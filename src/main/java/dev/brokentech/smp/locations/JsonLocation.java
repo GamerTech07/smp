@@ -1,4 +1,4 @@
-package dev.brokenstudio.smp.locations;
+package dev.brokentech.smp.locations;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;

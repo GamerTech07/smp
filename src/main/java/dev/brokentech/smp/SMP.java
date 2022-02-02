@@ -1,15 +1,17 @@
-package dev.brokenstudio.smp;
+package dev.brokentech.smp;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import dev.brokenstudio.node.NodeManager;
-import dev.brokenstudio.node.ecxeptions.ClassNoNodeException;
-import dev.brokenstudio.nodes.LocationNode;
-import dev.brokenstudio.smp.database.DatabaseHandler;
+import dev.brokentech.node.NodeManager;
+import dev.brokentech.node.ecxeptions.ClassNoNodeException;
+import dev.brokentech.nodes.LocationNode;
+import dev.brokentech.smp.commands.LocationCMD;
+import dev.brokentech.smp.commands.PingCMD;
+import dev.brokentech.smp.database.DatabaseHandler;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import dev.brokenstudio.smp.listener.*;
+import dev.brokentech.smp.listener.*;
 
 public class SMP extends JavaPlugin {
 
@@ -36,6 +38,9 @@ public class SMP extends JavaPlugin {
     }
 
     private void registerCommands() throws ClassNoNodeException {
+        getCommand("ping").setExecutor(new PingCMD());
+        getCommand("location").setExecutor(new LocationCMD());
+
         nodeManager.registerNode(new LocationNode());
     }
 
@@ -46,6 +51,7 @@ public class SMP extends JavaPlugin {
         pluginManager.registerEvents(new EntityDamageByEntityListener(), this);
         pluginManager.registerEvents(new EntityExplodeListener(), this);
         pluginManager.registerEvents(new PlayerBedEnterListener(), this);
+        pluginManager.registerEvents(new PlayerDeathListener(), this);
     }
 
     @Override

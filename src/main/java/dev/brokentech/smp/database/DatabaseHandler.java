@@ -1,4 +1,4 @@
-package dev.brokenstudio.smp.database;
+package dev.brokentech.smp.database;
 
 public class DatabaseHandler {
 

@@ -4,8 +4,12 @@ authors:
   - BrokenStudio
   - GamerTech07
 version: 1.0
-main: dev.brokenstudio.smp.SMP
+main: dev.brokentech.smp.SMP
 depend:
   - TechBase
 
 commands:
+  ping:
+    description: Shows your ping
+
+  location:

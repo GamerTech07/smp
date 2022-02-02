@@ -1,4 +1,4 @@
-package dev.brokenstudio.smp.database;
+package dev.brokentech.smp.database;
 
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;

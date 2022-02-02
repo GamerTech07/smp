@@ -1,9 +1,10 @@
-package dev.brokenstudio.smp.listener;
+package dev.brokentech.smp.listener;
 
-import dev.brokenstudio.smp.SMP;
+import dev.brokentech.smp.SMP;
 import io.technetwork.base.timer.Timer;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 

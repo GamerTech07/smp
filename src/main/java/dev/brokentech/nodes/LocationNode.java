@@ -1,10 +1,10 @@
-package dev.brokenstudio.nodes;
+package dev.brokentech.nodes;
 
-import dev.brokenstudio.node.annotations.Alias;
-import dev.brokenstudio.node.annotations.Command;
-import dev.brokenstudio.node.annotations.Node;
-import dev.brokenstudio.smp.SMP;
-import dev.brokenstudio.smp.locations.JsonLocation;
+import dev.brokentech.node.annotations.Alias;
+import dev.brokentech.node.annotations.Command;
+import dev.brokentech.node.annotations.Node;
+import dev.brokentech.smp.SMP;
+import dev.brokentech.smp.locations.JsonLocation;
 import org.bukkit.Location;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;

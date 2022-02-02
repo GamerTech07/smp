@@ -1,9 +1,9 @@
-package dev.brokenstudio.node;
+package dev.brokentech.node;
 
-import dev.brokenstudio.node.annotations.Alias;
-import dev.brokenstudio.node.annotations.Command;
-import dev.brokenstudio.node.annotations.Node;
-import dev.brokenstudio.node.ecxeptions.ClassNoNodeException;
+import dev.brokentech.node.annotations.Alias;
+import dev.brokentech.node.annotations.Command;
+import dev.brokentech.node.annotations.Node;
+import dev.brokentech.node.ecxeptions.ClassNoNodeException;
 import org.bukkit.command.CommandSender;
 
 import java.lang.reflect.InvocationTargetException;

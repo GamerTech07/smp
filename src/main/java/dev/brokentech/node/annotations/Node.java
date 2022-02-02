@@ -1,4 +1,4 @@
-package dev.brokenstudio.node.annotations;
+package dev.brokentech.node.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,8 +7,10 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Alias {
+public @interface Node {
 
-    String[] alias();
+    String name();
+
+    String permission() default "server.player";
 
 }
